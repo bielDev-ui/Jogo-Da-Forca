@@ -1,0 +1,22 @@
+import jogo as j
+import fileHandler as fH
+
+def mostrar_menu():
+    print("="*30)
+    print(' ' * 7 + 'JOGO DA FORCA')
+    print('='*30)
+    print('\n1 - JOGAR')
+    print('2 - SCORE')
+    print(' 3 - SAIR\n')
+    print('='*30)
+
+arquivo = 'score.txt'
+if fH.existeArquivo(arquivo):
+    print('arquivo localizado no PC')
+else:
+    print('ARQUIVO NÃO EXISTE.')
+    fH.criaArquivo(arquivo)
+
+while True:
+    mostrar_menu()
+    opcao = int(input('Escolha a opção (1/2/3): '))
