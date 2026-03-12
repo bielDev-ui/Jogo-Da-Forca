@@ -20,3 +20,14 @@ else:
 while True:
     mostrar_menu()
     opcao = int(input('Escolha a opção (1/2/3): '))
+
+    if opcao == 1:
+        print('iniciar jogo!')
+        j.jogar()
+    elif opcao == 2:
+        print('score!')
+    elif opcao == 3:
+        print('Saindo do jogo. Até mais!')
+        break
+    else:
+        print('opção inválida.')
