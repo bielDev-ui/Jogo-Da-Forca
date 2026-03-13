@@ -1,10 +1,7 @@
 import jogo as j
 import fileHandler as fH
 
-import os 
-#teste porque o arquivo não tava abrindo
-print(f"O Python está procurando na pasta: {os.getcwd()}")
-print(f"Arquivos que ele está vendo: {os.listdir('.')}")
+
 
 
 def mostrar_menu():
@@ -32,6 +29,14 @@ while True:
         j.jogar()
     elif opcao == 2:
         print('score!')
+        dados = fH.listarArquivo('score.txt')
+        if not dados:
+            print('score vazio')
+        else:
+            i = 1
+            for jogador in dados:
+                print(f'{i} -> {jogador[0]}, pontuação: {jogador[5].strip()}')
+                i += 1
     elif opcao == 3:
         print('Saindo do jogo. Até mais!')
         break

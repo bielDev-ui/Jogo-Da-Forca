@@ -1,0 +1,4 @@
+lucas;600
+biel;0
+kiki;600
+bel;800
