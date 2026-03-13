@@ -1,6 +1,12 @@
 import jogo as j
 import fileHandler as fH
 
+import os 
+#teste porque o arquivo não tava abrindo
+print(f"O Python está procurando na pasta: {os.getcwd()}")
+print(f"Arquivos que ele está vendo: {os.listdir('.')}")
+
+
 def mostrar_menu():
     print("="*30)
     print(' ' * 7 + 'JOGO DA FORCA')
@@ -31,3 +37,5 @@ while True:
         break
     else:
         print('opção inválida.')
+
+
