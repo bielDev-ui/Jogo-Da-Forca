@@ -1,3 +1,0 @@
-vini;200
-teste;100
-ghfdghfg;100
